@@ -1,0 +1,35 @@
+
+// Setting up webpack//
+1) First we install webpack as a dependency.
+2) We create the file webpack.config.js.
+3) We define the entry point
+
+
+// Notes //
+
+Entry: 
+it is the file that imports everything, it does not export anything. So it is defined
+as the entry point of the application.
+
+Also it is the first file to be executed, from here it check which files are the ones
+to be imported.
+
+
+Output:
+The output property it is an object with TWO nested properties. We specify a "Path" and
+also a "filename".
+
+path: property, reference to the directory that the output file should be saved to.
+filename: is what webpack should call the actual file that gets created.
+
+
+// Commands at package.json//
+
+// Notes //
+All the comments starts with double quotes.
+
+When you install wepack globally at your computer, and the run webpack at the command line, your computer will look at all of your globally installed modules. And will find one called webpack and run it.
+
+So if you install it as a dependency, it looks it at the node_module, so it is faster.
+
+Also if we have different versions, it is kind of complicated having webpack installed globally. So we install it locally and it is easier.

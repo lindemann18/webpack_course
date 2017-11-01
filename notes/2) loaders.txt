@@ -1,0 +1,31 @@
+// Loaders // 
+
+The modules are the ones who performs the actions, for instance Babel turns es2015 code
+to js5 code WEBPACK just link up js modules together.
+
+We are going to install 3 separated modules to get Babel working.
+
+Module                  Purpose
+
+babel-loader            Teaches babel how to work with Webpack
+
+babel-core              Knows how to take in code, parse it and generate some output files
+
+babel-preset-eng        Ruleset for telling babel exactly what pieces of es2015 syntax to
+                        look for, and how to turn it into ES5 code.
+                        
+
+we install with the instruction npm install babel-loader babel-core babel-preset-eng
+
+We will tell which files are the ones that are going to be transpilled.
+
+1) We will add the sections module to the config.
+2) We add the rules array, where we will add the different loaders or rules.
+3) we defined the "use" option that defines which loader/rule to use.
+4) we defined the test option, adding the regex that matches the file type.
+5) we create our file .babelrc. adding our presets object that contains the env.
+
+// Notes //
+
+The rules specify each different loader/rule that we want to run on our project. 
+Because we can have several ones, we defined it as an array.
